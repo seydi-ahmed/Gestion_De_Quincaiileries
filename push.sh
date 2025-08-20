@@ -1,4 +1,4 @@
 git add .
-git commit -m "repository du backend complet"
+git commit -m "service du backend complet"
 git push gitea
 git push github
