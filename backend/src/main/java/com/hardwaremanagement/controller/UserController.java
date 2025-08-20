@@ -1,6 +1,7 @@
 package com.hardwaremanagement.controller;
 
 import com.hardwaremanagement.model.User;
+import com.hardwaremanagement.model.Role;
 import com.hardwaremanagement.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -54,7 +55,7 @@ public class UserController {
     @GetMapping("/role/{role}")
     @PreAuthorize("hasRole('SUPER_ADMIN')")
     public List<User> getUsersByRole(@PathVariable String role) {
-        return userService.getUsersByRole(User.Role.valueOf(role.toUpperCase()));
+        return userService.getUsersByRole(Role.valueOf(role.toUpperCase()));
     }
 
     @GetMapping("/owner/{ownerId}/managers")

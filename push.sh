@@ -1,4 +1,4 @@
 git add .
-git commit -m "controller et playload du backend complet"
+git commit -m "backend complet"
 git push gitea
 git push github
