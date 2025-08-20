@@ -73,6 +73,3 @@ public class User {
     public void setOwner(User owner) { this.owner = owner; }
 }
 
-enum Role {
-    SUPER_ADMIN, OWNER, MANAGER
-}
