@@ -1,4 +1,4 @@
 git add .
-git commit -m "models du frontend"
+git commit -m "frontend basique"
 git push gitea
 git push github

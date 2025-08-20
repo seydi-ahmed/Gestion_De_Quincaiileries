@@ -1,5 +1,5 @@
-import { HardwareStore } from './hardware-store.model';
-import { Product } from './product.model';
+import { HardwareStore } from './hardware-store';
+import { Product } from './product';
 
 export interface Inventory {
   id?: number;
